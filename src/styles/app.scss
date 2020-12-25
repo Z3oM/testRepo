@@ -1,0 +1,199 @@
+$defaultFontSize: 18px;
+$defaultHeaderHeight: 90px;
+$defaultWidth: 1400px;
+$maxDefaultWidth: 1600px;
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("/assets/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("/assets/fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+
+  font-family: "Proxima Nova Rg";
+  font-size: $defaultFontSize;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+header {
+  width: 100vw;
+  background-color: #fff;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: $defaultWidth;
+  height: $defaultHeaderHeight;
+  margin: 0 auto;
+}
+
+.left-block {
+  display: flex;
+  align-items: center;
+  display: flex;
+  // outline: 1px solid black;
+  vertical-align: middle;
+  height: $defaultHeaderHeight;
+}
+
+.logotype {
+  img {
+    width: 158px;
+    height: 42px;
+  }
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  // outline: 1px solid rgb(187, 71, 71);
+  font-weight: 600;
+  height: $defaultHeaderHeight;
+}
+
+.address-fig {
+  margin-left: 150px;
+  margin-top: 6px;
+}
+
+.edit-adress {
+  width: 450px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  margin-left: 150px;
+  height: 40px;
+  background-image: url('/assets/cil_location-pin.svg');
+  background-size: 28px, 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: calc(16px + 38px);
+  border-radius: 5px;
+}
+
+.edit-adress:focus {
+  background-color: #F5F5F5;
+}
+
+.input-search {
+  position: relative;
+}
+
+.address-items {
+  position: absolute;
+  right: 0px;
+
+  width: 450px;
+  height: 110px;
+  background-color: #fff; 
+
+  box-shadow: 2px 6px 20px rgba(119, 119, 119, 0.18);
+  border-radius: 5px;
+
+}
+
+.address-items {
+  ul {
+    list-style-type: none;
+
+    li {
+      height: 33,33px;
+      outline: 1px solid black;
+      span {
+        color: #979797;
+
+      }
+    }
+  }
+}
+
+
+
+
+
+.right-block {
+  display: flex;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  height: $defaultHeaderHeight; 
+}
+
+.right-btn {
+  display: flex;
+  align-items: center;
+  margin-left: 76px;
+}
+
+.btn-text {
+  margin-left: 14px;
+}
+
+.nav-block-btn {
+  width: $defaultWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 0 auto;
+}
+
+nav {
+  width: $maxDefaultWidth;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #9ccb3b;
+}
+
+.btn-nav:not(:last-child) {
+  cursor: pointer;
+  height: 40px;
+  line-height: 1.6em;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-nav:last-of-type {
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-nav:not(:last-child):hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.active:not(:last-child) {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-expand {
+  img {
+    margin-top: 10px;
+    margin-left: 10px;
+    fill: #000;
+  }
+}
